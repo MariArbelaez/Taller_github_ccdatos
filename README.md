@@ -1,96 +1,88 @@
+<div align="center">
+  
 ![DataScience](JP-DATA-tmagArticle.webp)
+
+</div>
 
 # Jeff Hammerbacher y el desarrollo de la infraestructura de datos y del Data Warehouse de Facebook
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/pragyy/datascience-readme-template?include_prereleases)
-![GitHub last commit](https://img.shields.io/github/last-commit/pragyy/datascience-readme-template)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/pragyy/datascience-readme-template)
-![GitHub](https://img.shields.io/github/license/pragyy/datascience-readme-template)
-![contributors](https://img.shields.io/github/contributors/pragyy/datascience-readme-template) 
-![codesize](https://img.shields.io/github/languages/code-size/pragyy/datascience-readme-template) 
+![Jeff Hammerbacher](https://img.shields.io/badge/L%C3%ADder-Jeff_Hammerbacher-blue)
+![Data Warehouse](https://img.shields.io/badge/Infraestructura-Data_Warehouse-1877F2?logo=facebook&logoColor=white)
+![Apache Hive](https://img.shields.io/badge/Tecnolog%C3%ADa-Apache_Hive-orange)
+![Hadoop](https://img.shields.io/badge/Procesamiento-Apache_Hadoop-66CCFF)
 
-> A guide to writing an amazing readme for your data science project.
+> Jeff Hammerbacher, el cientifico del proyecto que vamos a analizar, estudió Matemáticas en Harvard, habia trabajado antes ya como analista cuantitativo y llegó a Facebook en 2006. Allí fundó y lideró el Data Team, un equipo que combinaba análisis, ingeniería y construcción de infraestructura de datos.
 
-The project title should be concise and self-explanatory so that the user can easily remember your project.
+# ***Desarrollo de la infraestructura de Data Science y Data Warehouse de Facebook.***
 
-Add a cover banner to the top of your Readme to catch the attention of your readers.
-I usually include images that are relevant to my project, and you can easily find any image for free online without worrying about copyright issues. However, if the work is not free, make sure to credit the proper owners in the references/acknowledgement section.
+Cuando Hammerbacher llegó a Facebook, existía una herramienta interna que se llamaba ***Watch Page***. Esta utilizaba las bases de datos MySQL que alimentaban el sitio y ejecutaba consultas para obtener información como el número de usuarios activos y su distribución entre  diferentes redes. Hammerbacher dice que su primera tarea habia sido crear una versión más profesional del sistema, osea un ***data warehouse*** capaz de recopilar un rango mucho más amplio de datos.
 
-The colorful tiles beneath the title are known as badges, and they improve readability by providing quick insights into the github repository. I use [Shields IO](https://shields.io/). Depending on the project you can use the ones that are relevant. 
+> [!WARNING]
+> Un Data Warehouse es un sistema diseñado para reunir y organizar grandes cantidades de datos de Facebook en un lugar preparado específicamente para analizarlos.
 
-# Project Overview
+Además de eso, las preguntas que el equipo quería responder estaban principalmente relacionadas con el crecimiento de Facebook. Como qué redes estaban creciendo, cuáles no y qué factores podían explicar ese crecimiento y/o decrecimiento.
 
-In this section you should provide a brief overview of the project, what it is about, and what it aims to achieve. This will help readers quickly understand what the project is all about.
+Después, el crecimiento de los datos hizo que la infraestructura original dejara de ser suficiente. Facebook pasó de trabajar con aproximadamente 15 TB de datos en 2007 a ***2 PB***, y algunos procesos diarios que inicialmente tardaban más de un día podían realizarse en pocas horas utilizando Hadoop.
 
-# Installation and Setup
+# ***Características del Proyecto.***
 
-In this section, provide detailed instructions on how to set up the project on a local machine. This includes any necessary dependencies, software requirements, and installation steps. Make sure to include clear and concise instructions so that others can easily replicate your setup.
+- [x] ¿Qué se hizo?
+- [ ] ¿Qué información se utilizó?
+- [ ] ¿Cómo se recopilaban los datos?
+- [ ] ¿Cómo se procesaban los datos?
+- [ ] ¿Qué función tenía el Data Warehouse?
+- [ ] ¿Qué análisis se realizaba?
+- [ ] Herramientas
 
-I like to structure it as below - 
-## Codes and Resources Used
-In this section I give user the necessary information about the software requirements.
-- **Editor Used:**  Informing the user of the editor used to produce the project.
-- **Python Version:** Informing the user of the version of python used for this project. If you are using some other language such as R, you can mention that as well.
+# *¿QUÉ SE HIZO?*
 
-## Python Packages Used
-In this section, I include all the necessary dependencies needed to reproduce the project, so that the reader can install them before replicating the project. I categorize the long list of packages used as - 
-- **General Purpose:** General purpose packages like `urllib, os, request`, and many more.
-- **Data Manipulation:** Packages used for handling and importing dataset such as `pandas, numpy` and others.
-- **Data Visualization:** Include packages which were used to plot graphs in the analysis or for understanding the ML modelling such as `seaborn, matplotlib` and others.
-- **Machine Learning:** This includes packages that were used to generate the ML model such as `scikit, tensorflow`, etc.
+Basicamente el objetivo principal era desarrollar una infraestructura que permitiera a Facebook aprovechar de la manera más eficiente los datos generados por sus usuarios.
 
-The level of granularity you want to provide for the above list is entirely up to you. You can also add a few more levels, such as those for statistical analysis or data preparation, or you can simply incorporate them into the above list as is.
+El trabajo incluyó aspectos como:
+<div>
+  
+- Crear y dirigir el equipo inicial de datos de Facebook.
+- Desarrollar un Data Warehouse más profesional.
+- Organizar la información para facilitar su análisis.
+- Separar las tareas de análisis de las bases de datos utilizadas para el funcionamiento normal de Facebook.
+- Desarrollar sistemas que fueran capaces de procesar cantidades cada vez mas grandes de información.
+- Crear herramientas que permitieran realizar consultas sobre estos grandes conjuntos de datos.
+- Usar los datos para entender el comportamiento de los usuarios y el crecimiento o tendencias de la plataforma.
+</div>
 
-# Data
 
-The very crucial part of any data science project is dataset. Therefore list all the data sources used in the project, including links to the original data, descriptions of the data, and any pre-processing steps that were taken.
+# *¿QUÉ INFORMACIÓN SE UTILIZÓ?*
+El proyecto usó información generada por la misma plataforma de Facebook.
+Despliega para conocer algunos ejemplos más específicos de la información que usaron.
+<details>
+  
+<Resumen> Haz click para desplejar mas info </Resumen>
+- Actividad de los usuarios
+- Usuarios activos
+- Interacciones de los usuarios
+- Crecimiento de la red
+- Uso de productos
+- Actividad dentro de la plataforma
+- Registros generados por los sistemas
 
-I structure this as follows - 
+</details>
 
-## Source Data
-In this section, I list all of the data that was used, along with the source link and a few lines that describe each data. You can also explain each of the data attributes in greater detail if you wish.
+# *¿CÓMO SE RECOPILABAN LOS DATOS?*
+Los datos provenían principalmente de la actividad que ocurría dentro de Facebook, como ya lo mencionamos arriba.
 
-## Data Acquisition
-Data collection is not always as simple as downloading from Kaggle or any open source website; it can also be gathered through API calls or online scraping. So you can elaborate on this step in this section so that the reader can obtain the dataset by following your instructions.
+Cada interacción de los usuarios con la plataforma podía generar información útil para entender el comportamiento y el crecimiento de Facebook.
 
-## Data Preprocessing
-Acquired data is not always squeaky clean, so preprocessing them are an integral part of any data analysis. In this section you can talk about the same.
+A medida que el tamaño de Facebook aumentó, fue necesario desarrollar sistemas especializados para recopilar y transportar grandes cantidades de registros.
 
-# Code structure
-Explain the code structure and how it is organized, including any significant files and their purposes. This will help others understand how to navigate your project and find specific components. 
+Uno de estos sistemas fue ***Scribe***, desarrollado por Facebook para recopilar y transportar grandes volúmenes de datos provenientes de los registros de los sistemas.
 
-Here is the basic suggested skeleton for your data science repo (you can structure your repository as needed ):
+> [!WARNING]
+> Scribe funcionaba como un sistema de recopilación y transporte de registros ***(logs)*** dentro de la infraestructura de datos de Facebook. Los diferentes servidores de Facebook generaban de forma continua información sobre las actividades que ocurrían en la plataforma, y Scribe recibía esos registros desde muchos servidores, los organizaba y los enviaba hacia sistemas de almacenamiento para que pudieran ser procesados luego. Podemos decir que Scribe actuaba como un intermediario entre los servidores que generaban los datos y la infraestructura donde esos datos eran almacenados y analizados.
 
-```bash
-├── data
-│   ├── data1.csv
-│   ├── data2.csv
-│   ├── cleanedData
-│   │   ├── cleaneddata1.csv
-|   |   └── cleaneddata2.csv
-├── data_acquisition.py
-├── data_preprocessing.ipynb
-├── data_analysis.ipynb
-├── data_modelling.ipynb
-├── Img
-│   ├── img1.png
-│   ├── Headerheader.jpg
-├── LICENSE
-├── README.md
-└── .gitignore
-```
+# *¿CÓMO SE PROCESABAN LOS DATOS?*
 
-# Results and evaluation
-Provide an overview of the results of your project, including any relevant metrics and graphs. Include explanations of any evaluation methodologies and how they were used to assess the quality of the model. You can also make it appealing by including any pictures of your analysis or visualizations.
+A medida que aumentaba la cantidad de información, las ***bases de datos tradicionales*** dejaron de ser suficientes para algunas tareas de análisis. Entonces Facebook comenzó a utilizar ***tecnologías de procesamiento distribuido***, que permitían dividir los datos y las tareas entre diferentes computadores. Una de las tecnologías más importantes fue Hadoop.
 
-# Future work
-Outline potential future work that can be done to extend the project or improve its functionality. This will help others understand the scope of your project and identify areas where they can contribute.
+![DataScience](JP-DATA-tmagArticle.webp)
 
-# Acknowledgments/References
-Acknowledge any contributors, data sources, or other relevant parties who have contributed to the project. This is an excellent way to show your appreciation for those who have helped you along the way.
-
-For instance, I am referencing the image that I used for my readme header - 
-- Image by [rashadashurov](https://www.vectorstock.com/royalty-free-vector/data-science-cartoon-template-with-flat-elements-vector-27984292)
-
-# License
-Specify the license under which your code is released. Moreover, provide the licenses associated with the dataset you are using. This is important for others to know if they want to use or contribute to your project. 
+Hadoop permitió procesar grandes cantidades de información utilizando múltiples computadores en lugar de depender de una sola máquina.
