@@ -87,7 +87,60 @@ A medida que aumentaba la cantidad de información, las ***bases de datos tradic
 
 Hadoop permitió procesar grandes cantidades de información utilizando múltiples computadores en lugar de depender de una sola máquina.
 
-<img src="images" width="200" />
+<img src="hadoopi.jpg" width="200" />
 Hadoop Distributed File System, permitió distribuir grandes cantidades de información entre diferentes máquinas.
 
-Hadoop permitió procesar grandes cantidades de información utilizando múltiples computadores en lugar de depender de una sola máquina.
+<img src="MapReduce-esquema-1024x615.png.webp" width="200" />
+MapReduce permitió dividir las tareas de procesamiento en diferentes operaciones que podían ejecutarse de manera distribuida.
+
+<img src="Apache_Hive_logo.svg" width="200" />
+Hive permitió realizar consultas sobre grandes cantidades de datos almacenados en Hadoop mediante un sistema de consultas de más alto nivel.
+
+
+# *¿QUÉ FUNCIÓN TENÍA EL DATA WAREHOUSE?*
+
+El Data Warehouse era bastante importante porque Facebook generaba información desde diferentes partes de su plataforma. Entonces, en lugar de hacer todos los análisis directamente sobre las bases de datos que utilizaba Facebook para funcionar, la información podía organizarse en un sistema diseñado específicamente para el análisis.
+
+Entonces podemos decir que se dividía en: Una base de datos operacional (En donde el usuario inicia sesión, Facebook consulta una base de datos y muestra la informacipon) y por otra parte en Data Warehouse (En donde hay millones de actividades que pasan a través de Data Warehouse, y este realiza las consultas previas al análisis)
+
+# *¿QUÉ ANÁLISIS SE REALIZABA?*
+> ¿Cuántos usuarios estaban activos?
+> ¿Qué tan rápido estaba creciendo la red?
+> ¿Cómo estaban distribuidos los usuarios?
+> ¿Cómo interactuaban los usuarios con la plataforma?
+> ¿Cómo cambiaba el uso de los productos?
+> ¿Qué patrones podían identificarse en la actividad de los usuarios?
+
+
+# *HERRAMIENTAS*
+
+|Herramienta                 | Función                                |
+|----------------------------------------|-------------------------------------------------------------------|
+| MySQL    | Base de datos utilizada en los primeros sistemas de Facebook                       | 
+|Data Warehouse|Organización y almacenamiento de datos para análisis                |
+|Hadoop |Procesamiento distribuido de grandes cantidades de datos|
+|HDFS   | Almacenamiento distribuido |
+|MapReduce| Procesamiento distribuido|
+|Hive| Consultas sobre grandes conjuntos de datos|
+|Scribe| Recopilación y transporte de registros |
+
+- [x] ¿Qué se hizo?
+- [x] ¿Qué información se utilizó?
+- [x] ¿Cómo se recopilaban los datos?
+- [x] ¿Cómo se procesaban los datos?
+- [x] ¿Qué función tenía el Data Warehouse?
+- [x] ¿Qué análisis se realizaba?
+- [x] Herramientas
+
+# *¿CUÁL FUE EL IMPACTO DE TODO ESTE PROYECTO?*
+
+El proyecto permitió desarrollar una forma mucho más estructurada de utilizar sus datos. La empresa avanzo hacia una organización más orientada a los datos, en la que la información podía utilizarse para comprender:
+
+- El comportamiento de los usuarios.
+- El crecimiento de la plataforma.
+- El uso de los productos.
+- Los cambios dentro de la red.
+
+Además, este proyecto y sus funciones tuvieron impacto en el campo de Big Data.
+
+
