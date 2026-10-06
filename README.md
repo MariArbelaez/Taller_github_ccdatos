@@ -83,6 +83,11 @@ Uno de estos sistemas fue ***Scribe***, desarrollado por Facebook para recopilar
 
 A medida que aumentaba la cantidad de información, las ***bases de datos tradicionales*** dejaron de ser suficientes para algunas tareas de análisis. Entonces Facebook comenzó a utilizar ***tecnologías de procesamiento distribuido***, que permitían dividir los datos y las tareas entre diferentes computadores. Una de las tecnologías más importantes fue Hadoop.
 
-![DataScience](JP-DATA-tmagArticle.webp)
+<img src="03hadoop-logo.jpg" width="200" />
+
+Hadoop permitió procesar grandes cantidades de información utilizando múltiples computadores en lugar de depender de una sola máquina.
+
+<img src="images" width="200" />
+Hadoop Distributed File System, permitió distribuir grandes cantidades de información entre diferentes máquinas.
 
 Hadoop permitió procesar grandes cantidades de información utilizando múltiples computadores en lugar de depender de una sola máquina.
