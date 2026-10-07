@@ -46,7 +46,7 @@ El trabajo incluyó aspectos como:
 - Organizar la información para facilitar su análisis.
 - Separar las tareas de análisis de las bases de datos utilizadas para el funcionamiento normal de Facebook.
 - Desarrollar sistemas que fueran capaces de procesar cantidades cada vez mas grandes de información.
-- Crear herramientas que permitieran realizar consultas sobre estos grandes conjuntos de datos.
+- Crear herramientas que permitieran realizar consultas sobre estos grandes grupos de datos.
 - Usar los datos para entender el comportamiento de los usuarios y el crecimiento o tendencias de la plataforma.
 </div>
 
@@ -57,12 +57,12 @@ Despliega para conocer algunos ejemplos más específicos de la información que
 <details>
   
 <Resumen> Haz click para desplejar mas info </Resumen>
-- Actividad de los usuarios
+- Actividad de los usuarios en la plataforma
 - Usuarios activos
-- Interacciones de los usuarios
-- Crecimiento de la red
+- Interacciones de los usuarios en cuanto a alguna variable
+- Crecimiento de la red o tendencias de este
 - Uso de productos
-- Actividad dentro de la plataforma
+- Actividad dentro de la plataforma en general o específico a analizar
 - Registros generados por los sistemas
 
 </details>
@@ -70,9 +70,7 @@ Despliega para conocer algunos ejemplos más específicos de la información que
 # *¿CÓMO SE RECOPILABAN LOS DATOS?*
 Los datos provenían principalmente de la actividad que ocurría dentro de Facebook, como ya lo mencionamos arriba.
 
-Cada interacción de los usuarios con la plataforma podía generar información útil para entender el comportamiento y el crecimiento de Facebook.
-
-A medida que el tamaño de Facebook aumentó, fue necesario desarrollar sistemas especializados para recopilar y transportar grandes cantidades de registros.
+Cada interacción de los usuarios con la plataforma podía generar información útil para entender el comportamiento y el crecimiento de Facebook. A medida que el tamaño de Facebook aumentó, fue necesario desarrollar sistemas especializados para recopilar y transportar grandes cantidades de registros.
 
 Uno de estos sistemas fue ***Scribe***, desarrollado por Facebook para recopilar y transportar grandes volúmenes de datos provenientes de los registros de los sistemas.
 
@@ -107,9 +105,9 @@ Entonces podemos decir que se dividía en: Una base de datos operacional (En don
 > ¿Cuántos usuarios estaban activos?
 > ¿Qué tan rápido estaba creciendo la red?
 > ¿Cómo estaban distribuidos los usuarios?
-> ¿Cómo interactuaban los usuarios con la plataforma?
+> ¿Cómo interactuaban los usuarios con la plataforma de Facebook en cuanto a alguna variable a analizar?
 > ¿Cómo cambiaba el uso de los productos?
-> ¿Qué patrones podían identificarse en la actividad de los usuarios?
+> ¿Qué ciclos o tendencias podían identificarse en la actividad de los usuarios de Facebook?
 
 
 # *HERRAMIENTAS*
@@ -124,6 +122,8 @@ Entonces podemos decir que se dividía en: Una base de datos operacional (En don
 |Hive| Consultas sobre grandes conjuntos de datos|
 |Scribe| Recopilación y transporte de registros |
 
+<div>
+  
 - [x] ¿Qué se hizo?
 - [x] ¿Qué información se utilizó?
 - [x] ¿Cómo se recopilaban los datos?
@@ -131,16 +131,38 @@ Entonces podemos decir que se dividía en: Una base de datos operacional (En don
 - [x] ¿Qué función tenía el Data Warehouse?
 - [x] ¿Qué análisis se realizaba?
 - [x] Herramientas
+  
+</div>
 
 # *¿CUÁL FUE EL IMPACTO DE TODO ESTE PROYECTO?*
 
-El proyecto permitió desarrollar una forma mucho más estructurada de utilizar sus datos. La empresa avanzo hacia una organización más orientada a los datos, en la que la información podía utilizarse para comprender:
+El proyecto permitió desarrollar una forma mucho más estructurada de utilizar sus datos. Además de que pudo incursionar de nueva manera el Big Data y también, la empresa avanzo hacia una organización más orientada a los datos, en la que la información podía utilizarse para comprender:
 
-- El comportamiento de los usuarios.
-- El crecimiento de la plataforma.
+- El comportamiento de los usuarios en Facebook.
+- El crecimiento/ decrecimientos de la plataforma y tendencias.
 - El uso de los productos.
-- Los cambios dentro de la red.
+- Los cambios dentro de la red en general o en cuanto a algo.
 
-Además, este proyecto y sus funciones tuvieron impacto en el campo de Big Data.
+  <img src="94561FB Big Data - 1.jpg" width="200" />
+  
+
+# *REFERENCIAS*
+Facebook Engineering. (2008). Hadoop. Meta Engineering. https://engineering.fb.com/2008/06/04/core-infra/hadoop/
+
+Facebook Engineering. (2008). Facebook’s Scribe technology now open source. Meta Engineering. https://engineering.fb.com/2008/10/24/web/facebook-s-scribe-technology-now-open-source/
+
+Facebook Engineering. (2009). Hive: A petabyte scale data warehouse using Hadoop. Meta Engineering. https://engineering.fb.com/2009/06/10/web/hive-a-petabyte-scale-data-warehouse-using-hadoop/
+
+Facebook Engineering. (2010). Looking at the code behind our three uses of Apache Hadoop. Meta Engineering. https://engineering.fb.com/2010/12/10/core-infra/looking-at-the-code-behind-our-three-uses-of-apache-hadoop/
+
+Facebook Engineering. (2010). Join optimization in Apache Hive. Meta Engineering. https://engineering.fb.com/2010/12/15/core-infra/join-optimization-in-apache-hive/
+
+Facebook Engineering. (2011). Moving an elephant: Large scale Hadoop data migration at Facebook. Meta Engineering. https://engineering.fb.com/2011/07/27/core-infra/moving-an-elephant-large-scale-hadoop-data-migration-at-facebook/
+
+Facebook Engineering. (2013). Presto: Interacting with petabytes of data at Facebook. Meta Engineering. https://engineering.fb.com/2013/11/06/core-infra/presto-interacting-with-petabytes-of-data-at-facebook/
+
+Kelman, G. (2010). Jeff Hammerbacher on Hadoop, Facebook and a surprising bit about Microsoft. Redfin. https://www.redfin.com/news/jeff_hammerbacher_on_hadoop_facebook_and_a_surprising_bit_about_microsoft/
+
+Strickler, Y. (2021). Scientist Jeff Hammerbacher on what gets measured. IdeaSpace. https://ideaspace.ystrickler.com/p/scientist-jeff-hammerbacher-on-what
 
 
